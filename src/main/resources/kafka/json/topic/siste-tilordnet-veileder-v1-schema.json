@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "title": "SisteTilordnetVeilederV1",
+  "description": "Schema for kafka topic pto.siste-tilordnet-veileder-v1",
+  "type": "object",
+  "properties": {
+    "aktorId": {
+      "description": "AktørId til brukeren som har blitt tilordnet veileder",
+      "type": "string",
+      "pattern": "^[0-9]*$"
+    },
+    "veilederId": {
+      "description": "NAV-ident til veileder som har blitt tilordnet bruker",
+      "type": "string"
+    },
+    "tilordnet": {
+      "description": "Når veilederen ble tilordnet bruker",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

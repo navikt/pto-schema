@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema",
+  "title": "SisteOppfolgingsperiodeV1",
+  "description": "Schema for kafka topic pto.siste-oppfolgingsperiode-v1",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "description": "UUID for oppfølgingsperioden",
+      "type": "string",
+      "format": "uuid"
+    },
+    "aktorId": {
+      "description": "AktørId på brukeren som oppfølgingsperioden tilhører",
+      "type": "string",
+      "pattern": "^[0-9]*$"
+    },
+    "startDato": {
+      "description": "Når oppfølgingsperioden ble startet",
+      "type": "string",
+      "format": "date-time"
+    },
+    "sluttDato": {
+      "description": "Når oppfølgingsperioden ble avsluttet. Null hvis oppfølgingsperioden ikke er avsluttet",
+      "type": ["string", "null"],
+      "format": "date-time"
+    }
+  }
+}
