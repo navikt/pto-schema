@@ -12,9 +12,9 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class KvpStartetV1 {
-    private String aktorId;
-    private String enhetId;
-    private String opprettetAv;
-    private ZonedDateTime opprettetDato;
-    private String opprettetBegrunnelse;
+    String aktorId;
+    String enhetId;
+    String opprettetAv;
+    ZonedDateTime opprettetDato;
+    String opprettetBegrunnelse;
 }

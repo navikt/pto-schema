@@ -12,6 +12,6 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class OppfolgingAvsluttetV1 {
-    private String aktorId;
-    private ZonedDateTime sluttdato;
+    String aktorId;
+    ZonedDateTime sluttdato;
 }

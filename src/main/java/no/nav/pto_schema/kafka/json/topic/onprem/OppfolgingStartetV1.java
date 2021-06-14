@@ -12,6 +12,6 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class OppfolgingStartetV1 {
-    private String aktorId;
-    private ZonedDateTime oppfolgingStartet;
+    String aktorId;
+    ZonedDateTime oppfolgingStartet;
 }

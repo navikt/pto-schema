@@ -10,6 +10,6 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class EndringPaNyForVeilederV1 {
-    private String aktorId;
-    private boolean nyForVeileder;
+    String aktorId;
+    boolean nyForVeileder;
 }

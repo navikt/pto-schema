@@ -12,8 +12,8 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class KvpAvsluttetV1 {
-    private String aktorId;
-    private String avsluttetAv;
-    private ZonedDateTime avsluttetDato;
-    private String avsluttetBegrunnelse;
+    String aktorId;
+    String avsluttetAv;
+    ZonedDateTime avsluttetDato;
+    String avsluttetBegrunnelse;
 }

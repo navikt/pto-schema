@@ -10,6 +10,6 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class EndringPaManuellStatusV1 {
-    private String aktorId;
-    private boolean erManuell;
+    String aktorId;
+    boolean erManuell;
 }
