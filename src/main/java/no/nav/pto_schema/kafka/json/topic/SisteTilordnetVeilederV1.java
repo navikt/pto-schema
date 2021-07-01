@@ -1,16 +1,16 @@
 package no.nav.pto_schema.kafka.json.topic;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
+import lombok.Value;
 
 import java.time.ZonedDateTime;
 
-@Data
+@Value
+@NoArgsConstructor(force = true)
 @AllArgsConstructor
-@NoArgsConstructor
-@Accessors(chain = true)
+@Builder
 public class SisteTilordnetVeilederV1 {
     String aktorId;
     String veilederId;

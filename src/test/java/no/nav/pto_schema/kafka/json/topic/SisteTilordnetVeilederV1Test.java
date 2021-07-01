@@ -13,40 +13,44 @@ public class SisteTilordnetVeilederV1Test {
     @Test
     public void should_not_throw_when_valid_json() {
         validate(
-                new SisteTilordnetVeilederV1()
-                        .setAktorId("123433")
-                        .setVeilederId("Z1234")
-                        .setTilordnet(ZonedDateTime.now())
+                SisteTilordnetVeilederV1.builder()
+                        .aktorId("123433")
+                        .veilederId("Z1234")
+                        .tilordnet(ZonedDateTime.now())
+                        .build()
         );
     }
 
     @Test
     public void should_throw_when_aktorId_is_null() {
         assertThrows(ValidationException.class, () -> validate(
-                new SisteTilordnetVeilederV1()
-                        .setAktorId(null)
-                        .setVeilederId("Z1234")
-                        .setTilordnet(ZonedDateTime.now())
+                SisteTilordnetVeilederV1.builder()
+                        .aktorId(null)
+                        .veilederId("Z1234")
+                        .tilordnet(ZonedDateTime.now())
+                        .build()
         ));
     }
 
     @Test
     public void should_throw_when_veilederId_is_null() {
         assertThrows(ValidationException.class, () -> validate(
-                new SisteTilordnetVeilederV1()
-                        .setAktorId("123456")
-                        .setVeilederId(null)
-                        .setTilordnet(ZonedDateTime.now())
+                SisteTilordnetVeilederV1.builder()
+                        .aktorId("123456")
+                        .veilederId(null)
+                        .tilordnet(ZonedDateTime.now())
+                        .build()
         ));
     }
 
     @Test
     public void should_throw_when_tilordnet_is_null() {
         assertThrows(ValidationException.class, () -> validate(
-                new SisteTilordnetVeilederV1()
-                        .setAktorId("123456")
-                        .setVeilederId("Z1234")
-                        .setTilordnet(null)
+                SisteTilordnetVeilederV1.builder()
+                        .aktorId("123456")
+                        .veilederId("Z1234")
+                        .tilordnet(null)
+                        .build()
         ));
     }
 
