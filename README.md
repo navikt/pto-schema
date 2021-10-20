@@ -3,7 +3,7 @@
 ![release](https://img.shields.io/github/v/release/navikt/pto-schema)
 
 Contains schemas and data classes that can be shared between applications,
- both internally within PTO and externally with services that use data from PTO.
+both internally within PTO and externally with services that use data from PTO.
 
 ## How to use
 

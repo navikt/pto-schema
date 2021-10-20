@@ -1,0 +1,65 @@
+{
+  "namespace": "no.nav.pto_schema.kafka.avro",
+  "type": "record",
+  "name": "Vedtak14aFattetDvh",
+  "fields": [
+    {
+      "name": "id",
+      "type": "long"
+    },
+    {
+      "name": "aktorId",
+      "type": "string"
+    },
+    {
+      "name": "hovedmalKode",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Vedtak14aFattetDvhHovedmalKode",
+          "symbols": [
+            "SKAFFE_ARBEID",
+            "BEHOLDE_ARBEID"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "innsatsgruppeKode",
+      "type": {
+        "type": "enum",
+        "name": "Vedtak14aFattetDvhInnsatsgruppeKode",
+        "symbols": [
+          "STANDARD_INNSATS",
+          "SITUASJONSBESTEMT_INNSATS",
+          "SPESIELT_TILPASSET_INNSATS",
+          "GRADERT_VARIG_TILPASSET_INNSATS",
+          "VARIG_TILPASSET_INNSATS"
+        ]
+      }
+    },
+    {
+      "name": "vedtakFattet",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "oppfolgingsenhetId",
+      "type": "string"
+    },
+    {
+      "name": "veilederIdent",
+      "type": "string"
+    },
+    {
+      "name": "beslutterIdent",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  ]
+}
