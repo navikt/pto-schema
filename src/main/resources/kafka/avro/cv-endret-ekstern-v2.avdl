@@ -1,4 +1,4 @@
-@namespace("no.nav.arbeid.cv.avro")
+@namespace("no.nav.arbeid.cv.avro.v2")
 /** Dette definerer det nye ekstern topicet i aiven
   * Det skille seg litt ut fra det gamle on-prem topicet
   * ved at tidspunkt som kan være null ikke bruker long, men date.
