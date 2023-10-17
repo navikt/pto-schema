@@ -13,16 +13,16 @@
 
     <repositories>
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>github</id>
+            <url>https://github-package-registry-mirror.gc.nav.no/cached/maven-release</url>
         </repository>
     </repositories>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <common.version>2.2022.09.26_07.11-9c0037f021cb</common.version>
-        <junit-platform.version>5.8.2</junit-platform.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <common.version>3.2023.10.17_06.55-4e30d96bba05</common.version>
+        <junit-platform.version>5.9.2</junit-platform.version>
         <avro.version>1.11.3</avro.version>
     </properties>
 
@@ -35,13 +35,13 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.erosb</groupId>
             <artifactId>everit-json-schema</artifactId>
-            <version>1.14.1</version>
+            <version>1.14.2</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
