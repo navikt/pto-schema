@@ -37,7 +37,7 @@ jobs:
           java-version: 17
           cache: 'maven'
       - name: Deploy release
-        run: mvn -B -e -X -Drevision="${{ env.VERSION }}" -DskipTests source:jar deploy
+        run: mvn -B -Drevision="${{ env.VERSION }}" -DskipTests source:jar deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create release
