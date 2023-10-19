@@ -24,12 +24,12 @@ jobs:
       packages: write
     runs-on: ubuntu-latest
     needs: test
-    ##if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Create Version
-        run: echo "VERSION=1.$(TZ=\"Europe/Oslo\" date +%Y.%m.%d_%H.%M)-$(git rev-parse --short=12 HEAD)-tia" >> $GITHUB_ENV
+        run: echo "VERSION=1.$(TZ=\"Europe/Oslo\" date +%Y.%m.%d_%H.%M)-$(git rev-parse --short=12 HEAD)" >> $GITHUB_ENV
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
