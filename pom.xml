@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.nav</groupId>
-    <artifactId>pto-schema</artifactId>
+    <artifactId>pto-schema-x</artifactId>
     <version>${revision}</version>
     <name>pto-schema</name>
     <description>Schemas for PTO</description>
@@ -12,7 +12,7 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/navikt/pto-schema</url>
+            <url>https://maven.pkg.github.com/navikt/pto-schema-x</url>
         </repository>
     </distributionManagement>
 
