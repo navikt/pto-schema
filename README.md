@@ -11,8 +11,8 @@ Add the following to your **pom.xml**:
 ```xml
     <repositories>
         <repository>
-            <id>jitpack</id>
-            <url>https://jitpack.io</url>
+            <id>github</id>
+            <url>https://github-package-registry-mirror.gc.nav.no/cached/maven-release</url>
         </repository>
     </repositories>
     <!-- ... -->

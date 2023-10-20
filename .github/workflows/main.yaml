@@ -4,8 +4,6 @@ on: push
 jobs:
   test:
     name: Test pto-schema
-    permissions:
-      packages: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
