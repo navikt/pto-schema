@@ -34,7 +34,7 @@
         <java.version>17</java.version>
         <common.version>3.2023.10.17_06.55-4e30d96bba05</common.version>
         <junit-platform.version>5.9.2</junit-platform.version>
-        <avro.version>1.11.3</avro.version>
+        <avro.version>1.11.4</avro.version>
     </properties>
 
     <dependencies>
