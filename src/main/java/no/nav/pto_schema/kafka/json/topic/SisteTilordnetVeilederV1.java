@@ -14,6 +14,6 @@ import java.time.ZonedDateTime;
 public class SisteTilordnetVeilederV1 {
     String aktorId;
     String veilederId;
-    ZonedDateTime tilordnet;
+    ZonedDateTime tilordnetTidspunkt;
 }
 
