@@ -16,7 +16,7 @@ public class SisteTilordnetVeilederV1Test {
                 SisteTilordnetVeilederV1.builder()
                         .aktorId("123433")
                         .veilederId("Z1234")
-                        .tilordnetTidspunkt(ZonedDateTime.now())
+                        .tilordnet(ZonedDateTime.now())
                         .build()
         );
     }
@@ -27,7 +27,7 @@ public class SisteTilordnetVeilederV1Test {
                 SisteTilordnetVeilederV1.builder()
                         .aktorId(null)
                         .veilederId("Z1234")
-                        .tilordnetTidspunkt(ZonedDateTime.now())
+                        .tilordnet(ZonedDateTime.now())
                         .build()
         ));
     }
@@ -38,7 +38,7 @@ public class SisteTilordnetVeilederV1Test {
                 SisteTilordnetVeilederV1.builder()
                         .aktorId("123456")
                         .veilederId(null)
-                        .tilordnetTidspunkt(ZonedDateTime.now())
+                        .tilordnet(ZonedDateTime.now())
                         .build()
         ));
     }
@@ -49,7 +49,7 @@ public class SisteTilordnetVeilederV1Test {
                 SisteTilordnetVeilederV1.builder()
                         .aktorId("123456")
                         .veilederId("Z1234")
-                        .tilordnetTidspunkt(null)
+                        .tilordnet(null)
                         .build()
         ));
     }
