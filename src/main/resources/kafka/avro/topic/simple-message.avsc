@@ -1,0 +1,9 @@
+{
+	"type": "record",
+	"name": "SimpleMessage",
+	"namespace": "no.nav.pto_schema.kafka.avro",
+	"fields": [
+		{"name": "content", "type":"string", "doc": "Message content"},
+		{"name": "date_time", "type":"string", "doc": "Datetime when the message was generated"}
+	]
+}
