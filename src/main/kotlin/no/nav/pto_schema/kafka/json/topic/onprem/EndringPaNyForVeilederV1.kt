@@ -16,7 +16,10 @@ data class EndringPaNyForVeilederV1(
         fun aktorId(aktorId: String?): Builder = apply { this.aktorId = aktorId }
         fun nyForVeileder(nyForVeileder: Boolean): Builder = apply { this.nyForVeileder = nyForVeileder }
 
-        fun build(): EndringPaNyForVeilederV1 = EndringPaNyForVeilederV1(aktorId!!, nyForVeileder)
+        fun build(): EndringPaNyForVeilederV1 = EndringPaNyForVeilederV1(
+            aktorId = aktorId!!,
+            nyForVeileder = nyForVeileder,
+        )
     }
 }
 

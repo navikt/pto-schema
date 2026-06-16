@@ -24,7 +24,12 @@ data class KvpAvsluttetV1(
         fun avsluttetDato(avsluttetDato: ZonedDateTime?): Builder = apply { this.avsluttetDato = avsluttetDato }
         fun avsluttetBegrunnelse(avsluttetBegrunnelse: String?): Builder = apply { this.avsluttetBegrunnelse = avsluttetBegrunnelse }
 
-        fun build(): KvpAvsluttetV1 = KvpAvsluttetV1(aktorId!!, avsluttetAv, avsluttetDato, avsluttetBegrunnelse)
+        fun build(): KvpAvsluttetV1 = KvpAvsluttetV1(
+            aktorId = aktorId!!,
+            avsluttetAv = avsluttetAv,
+            avsluttetDato = avsluttetDato,
+            avsluttetBegrunnelse = avsluttetBegrunnelse,
+        )
     }
 }
 

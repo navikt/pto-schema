@@ -21,7 +21,11 @@ data class VeilederTilordnetV2(
         fun veilederId(veilederId: String?): Builder = apply { this.veilederId = veilederId }
         fun tilordnetTidspunkt(tilordnetTidspunkt: ZonedDateTime?): Builder = apply { this.tilordnetTidspunkt = tilordnetTidspunkt }
 
-        fun build(): VeilederTilordnetV2 = VeilederTilordnetV2(aktorId!!, veilederId, tilordnetTidspunkt)
+        fun build(): VeilederTilordnetV2 = VeilederTilordnetV2(
+            aktorId = aktorId!!,
+            veilederId = veilederId,
+            tilordnetTidspunkt = tilordnetTidspunkt,
+        )
     }
 }
 

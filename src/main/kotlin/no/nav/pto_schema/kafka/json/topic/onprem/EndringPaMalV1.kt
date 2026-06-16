@@ -29,7 +29,12 @@ data class EndringPaMalV1(
         fun lagtInnAv(lagtInnAv: InnsenderData?): Builder = apply { this.lagtInnAv = lagtInnAv }
         fun veilederIdent(veilederIdent: String?): Builder = apply { this.veilederIdent = veilederIdent }
 
-        fun build(): EndringPaMalV1 = EndringPaMalV1(aktorId!!, endretTidspunk!!, lagtInnAv!!, veilederIdent)
+        fun build(): EndringPaMalV1 = EndringPaMalV1(
+            aktorId = aktorId!!,
+            endretTidspunk = endretTidspunk!!,
+            lagtInnAv = lagtInnAv!!,
+            veilederIdent = veilederIdent,
+        )
     }
 }
 

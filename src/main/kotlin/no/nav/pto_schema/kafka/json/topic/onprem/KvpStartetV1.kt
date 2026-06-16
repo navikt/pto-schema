@@ -27,7 +27,13 @@ data class KvpStartetV1(
         fun opprettetDato(opprettetDato: ZonedDateTime?): Builder = apply { this.opprettetDato = opprettetDato }
         fun opprettetBegrunnelse(opprettetBegrunnelse: String?): Builder = apply { this.opprettetBegrunnelse = opprettetBegrunnelse }
 
-        fun build(): KvpStartetV1 = KvpStartetV1(aktorId!!, enhetId, opprettetAv, opprettetDato, opprettetBegrunnelse)
+        fun build(): KvpStartetV1 = KvpStartetV1(
+            aktorId = aktorId!!,
+            enhetId = enhetId,
+            opprettetAv = opprettetAv,
+            opprettetDato = opprettetDato,
+            opprettetBegrunnelse = opprettetBegrunnelse,
+        )
     }
 }
 

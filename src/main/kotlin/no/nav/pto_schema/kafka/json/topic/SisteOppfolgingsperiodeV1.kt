@@ -25,7 +25,12 @@ data class SisteOppfolgingsperiodeV1(
         fun startDato(startDato: ZonedDateTime?): Builder = apply { this.startDato = startDato }
         fun sluttDato(sluttDato: ZonedDateTime?): Builder = apply { this.sluttDato = sluttDato }
 
-        fun build(): SisteOppfolgingsperiodeV1 = SisteOppfolgingsperiodeV1(uuid, aktorId, startDato, sluttDato)
+        fun build(): SisteOppfolgingsperiodeV1 = SisteOppfolgingsperiodeV1(
+            uuid = uuid,
+            aktorId = aktorId,
+            startDato = startDato,
+            sluttDato = sluttDato,
+        )
     }
 }
 

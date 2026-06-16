@@ -67,22 +67,22 @@ data class EndringPaaOppfoelgingsBrukerV2(
         fun sistEndretDato(sistEndretDato: ZonedDateTime?): Builder = apply { this.sistEndretDato = sistEndretDato }
 
         fun build(): EndringPaaOppfoelgingsBrukerV2 = EndringPaaOppfoelgingsBrukerV2(
-            fodselsnummer!!,
-            formidlingsgruppe,
-            iservFraDato,
-            fornavn,
-            etternavn,
-            oppfolgingsenhet,
-            kvalifiseringsgruppe,
-            rettighetsgruppe,
-            hovedmaal,
-            sikkerhetstiltakType,
-            diskresjonskode,
-            harOppfolgingssak,
-            sperretAnsatt,
-            erDoed,
-            doedFraDato,
-            sistEndretDato,
+            fodselsnummer = fodselsnummer!!,
+            formidlingsgruppe = formidlingsgruppe,
+            iservFraDato = iservFraDato,
+            fornavn = fornavn,
+            etternavn = etternavn,
+            oppfolgingsenhet = oppfolgingsenhet,
+            kvalifiseringsgruppe = kvalifiseringsgruppe,
+            rettighetsgruppe = rettighetsgruppe,
+            hovedmaal = hovedmaal,
+            sikkerhetstiltakType = sikkerhetstiltakType,
+            diskresjonskode = diskresjonskode,
+            harOppfolgingssak = harOppfolgingssak,
+            sperretAnsatt = sperretAnsatt,
+            erDoed = erDoed,
+            doedFraDato = doedFraDato,
+            sistEndretDato = sistEndretDato,
         )
     }
 }

@@ -16,7 +16,10 @@ data class EndringPaManuellStatusV1(
         fun aktorId(aktorId: String?): Builder = apply { this.aktorId = aktorId }
         fun erManuell(erManuell: Boolean): Builder = apply { this.erManuell = erManuell }
 
-        fun build(): EndringPaManuellStatusV1 = EndringPaManuellStatusV1(aktorId!!, erManuell)
+        fun build(): EndringPaManuellStatusV1 = EndringPaManuellStatusV1(
+            aktorId = aktorId!!,
+            erManuell = erManuell,
+        )
     }
 }
 
